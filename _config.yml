@@ -144,6 +144,7 @@ pwa:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
 paginate: 10
+# 10개씩 보이게 해줌
 
 # The base URL of your site
 baseurl: ""
