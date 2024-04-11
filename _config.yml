@@ -223,3 +223,6 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+google_analytics:
+  id: G-KXMTXM0ZMG
