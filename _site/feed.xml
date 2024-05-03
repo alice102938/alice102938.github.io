@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Alice</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-04-11T23:49:13+09:00</updated>
+  <updated>2024-04-28T01:33:50+09:00</updated>
   <author>
     <name>Alice.jH</name>
     <uri>http://localhost:4000/</uri>
@@ -20,143 +20,222 @@
 
   
   <entry>
-    <title>Welcome to Jekyll!</title>
-    <link href="http://localhost:4000/posts/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" />
-    <published>2024-04-11T18:15:46+09:00</published>
+    <title>[스노로즈] #2 회원 조회 API</title>
+    <link href="http://localhost:4000/posts/snorose-%ED%9A%8C%EC%9B%90-%EC%A0%95%EB%B3%B4-%EC%88%98%EC%A0%95/" rel="alternate" type="text/html" title="[스노로즈] #2 회원 조회 API" />
+    <published>2024-04-22T00:00:00+09:00</published>
   
-    <updated>2024-04-11T18:15:46+09:00</updated>
+    <updated>2024-04-22T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/welcome-to-jekyll/</id>
-    <content src="http://localhost:4000/posts/welcome-to-jekyll/" />
+    <id>http://localhost:4000/posts/snorose-%ED%9A%8C%EC%9B%90-%EC%A0%95%EB%B3%B4-%EC%88%98%EC%A0%95/</id>
+    <content src="http://localhost:4000/posts/snorose-%ED%9A%8C%EC%9B%90-%EC%A0%95%EB%B3%B4-%EC%88%98%EC%A0%95/" />
     <author>
-      <name>Alice.jH</name>
+      <name>Alice</name>
     </author>
 
   
     
-    <category term="jekyll" />
+    <category term="Project" />
     
-    <category term="update" />
+    <category term="Snorose" />
     
   
 
-  <summary>You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.
+  <summary>개발 계획
 
-Jekyll requires blog post files to be named according to the following format:
+  회원에게 보여져야 하는 것 정하기
+  UserInfoDto 만들기
+  로그인 후 token이 어떻게 되는지 로직 고민
+    
+      로그인 후 token이 id 꺼내지 않고 그대로 전달되어 회원 정보 조회하는 것인지 or
+      token에서 회원 정보 꺼내서 검증 후 회원 정보 조회하는 것인지
+      
+        
+          참고로 얘는 전체 다른 기능에서도 쓰일 듯함.
+        
+      
+    
+  
+  UserService 수정
+  UserController 수정
 
-YEAR-MONTH-DAY-title.MAR...</summary>
+
+추후 개발
+
+  MemberUpdateDto 만들기
+
+
+개발 계획 예시
+
+  존재하는 유저 id, 존재하지 않는 유저id에 대한 통합 테스트 추가
+  유저 조회 service 추가
+ ...</summary>
 
   </entry>
 
   
   <entry>
-    <title>Customize the Favicon</title>
-    <link href="http://localhost:4000/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
-    <published>2019-08-11T01:34:00+09:00</published>
+    <title>API 개발(feat.Post man)</title>
+    <link href="http://localhost:4000/posts/API-%EA%B0%9C%EB%B0%9C/" rel="alternate" type="text/html" title="API 개발(feat.Post man)" />
+    <published>2024-04-22T00:00:00+09:00</published>
   
-    <updated>2019-08-11T01:34:00+09:00</updated>
+    <updated>2024-04-22T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/customize-the-favicon/</id>
-    <content src="http://localhost:4000/posts/customize-the-favicon/" />
+    <id>http://localhost:4000/posts/API-%EA%B0%9C%EB%B0%9C/</id>
+    <content src="http://localhost:4000/posts/API-%EA%B0%9C%EB%B0%9C/" />
     <author>
-      <name>cotes</name>
+      <name>Alice</name>
     </author>
 
   
     
-    <category term="Blogging" />
+    <category term="Study" />
     
-    <category term="Tutorial" />
+    <category term="Spring" />
     
   
 
-  <summary>The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.
-
-Generate the favicon
-
-Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...</summary>
+  <summary></summary>
 
   </entry>
 
   
   <entry>
-    <title>Getting Started</title>
-    <link href="http://localhost:4000/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
-    <published>2019-08-09T21:55:00+09:00</published>
+    <title>[스노로즈] #2 회원 조회 API</title>
+    <link href="http://localhost:4000/posts/snoroes-%ED%9A%8C%EC%9B%90-%EC%A1%B0%ED%9A%8C/" rel="alternate" type="text/html" title="[스노로즈] #2 회원 조회 API" />
+    <published>2024-04-22T00:00:00+09:00</published>
   
-    <updated>2019-08-09T21:55:00+09:00</updated>
+    <updated>2024-04-22T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/getting-started/</id>
-    <content src="http://localhost:4000/posts/getting-started/" />
+    <id>http://localhost:4000/posts/snoroes-%ED%9A%8C%EC%9B%90-%EC%A1%B0%ED%9A%8C/</id>
+    <content src="http://localhost:4000/posts/snoroes-%ED%9A%8C%EC%9B%90-%EC%A1%B0%ED%9A%8C/" />
     <author>
-      <name>cotes</name>
+      <name>Alice</name>
     </author>
 
   
     
-    <category term="Blogging" />
+    <category term="Project" />
     
-    <category term="Tutorial" />
+    <category term="Snorose" />
     
   
 
-  <summary>Get started with Chirpy basics in this comprehensive overview. You will learn how to install, configure, and use your first Chirpy-based website, as well as deploy it to a web server.</summary>
+  <summary>개발 계획
+
+  회원에게 보여져야 하는 것 정하기
+  UserInfoDto 만들기
+  로그인 후 token이 어떻게 되는지 로직 고민
+    
+      로그인 후 token이 id 꺼내지 않고 그대로 전달되어 회원 정보 조회하는 것인지 or
+      token에서 회원 정보 꺼내서 검증 후 회원 정보 조회하는 것인지
+      
+        
+          참고로 얘는 전체 다른 기능에서도 쓰일 듯함.
+        
+      
+    
+  
+  UserService 수정
+  UserController 수정
+
+
+추후 개발
+
+  MemberUpdateDto 만들기
+
+
+개발 계획 예시
+
+  존재하는 유저 id, 존재하지 않는 유저id에 대한 통합 테스트 추가
+  유저 조회 service 추가
+ ...</summary>
 
   </entry>
 
   
   <entry>
-    <title>Writing a New Post</title>
-    <link href="http://localhost:4000/posts/write-a-new-post/" rel="alternate" type="text/html" title="Writing a New Post" />
-    <published>2019-08-08T15:10:00+09:00</published>
+    <title>Snorose_Signin</title>
+    <link href="http://localhost:4000/posts/github-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%EC%BB%A8%EB%B2%A4%EC%85%98/" rel="alternate" type="text/html" title="Snorose_Signin" />
+    <published>2024-04-21T00:00:00+09:00</published>
   
-    <updated>2019-08-08T15:10:00+09:00</updated>
+    <updated>2024-04-21T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/write-a-new-post/</id>
-    <content src="http://localhost:4000/posts/write-a-new-post/" />
+    <id>http://localhost:4000/posts/github-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%EC%BB%A8%EB%B2%A4%EC%85%98/</id>
+    <content src="http://localhost:4000/posts/github-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%EC%BB%A8%EB%B2%A4%EC%85%98/" />
     <author>
-      <name>cotes</name>
+      <name>Alice</name>
     </author>
 
   
     
-    <category term="Blogging" />
+    <category term="github" />
     
-    <category term="Tutorial" />
+    <category term="convention" />
     
   
 
-  <summary>This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.
+  <summary>Github 커밋 메시지 컨벤션
 
-Naming and Path
 
-Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of the root directory. Please note that the EXTENSION must be one of md and markdown. If you want to save time of cre...</summary>
+  규칙
+  
+    대부분의 프로그래밍 언어에는 관용적인 스타일과 같은 잘 정해진 규칙이 있다. 커밋 로그에 대한 팀의 접근 방식도 마찬가지여야 한다.
+  
+  
+    참고로 아래 내용들은 정해진 규칙이 아니므로 반드시 따르지 않아도 좋다. 그러나 대부분의 개발자들이 따르는 컨벤션(관습)이므로 참고한다면 분명 좋은 커밋 메시지를 작성할 수 있을 것이다.
+  
+  
+    커밋 메시지는 아래와 같은 구조로 이루어진다.
+  
+  set 메소드는 사용 의도를 파악하기 힘들고, 무분별하게 쓸 수 있어서 지양하는 것 같아
+userRegisterRequestDto.toEntity()에서 다 처리하도록!
+    
+      DB 수정
+      userService 수정
+  ...</summary>
 
   </entry>
 
   
   <entry>
-    <title>Text and Typography</title>
-    <link href="http://localhost:4000/posts/text-and-typography/" rel="alternate" type="text/html" title="Text and Typography" />
-    <published>2019-08-08T12:33:00+09:00</published>
+    <title>CORS 오류란 무엇인가(feat.Spring security)</title>
+    <link href="http://localhost:4000/posts/CORS-%EC%98%A4%EB%A5%98/" rel="alternate" type="text/html" title="CORS 오류란 무엇인가(feat.Spring security)" />
+    <published>2024-04-21T00:00:00+09:00</published>
   
-    <updated>2019-08-08T12:33:00+09:00</updated>
+    <updated>2024-04-21T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/text-and-typography/</id>
-    <content src="http://localhost:4000/posts/text-and-typography/" />
+    <id>http://localhost:4000/posts/CORS-%EC%98%A4%EB%A5%98/</id>
+    <content src="http://localhost:4000/posts/CORS-%EC%98%A4%EB%A5%98/" />
     <author>
-      <name>cotes</name>
+      <name>Alice</name>
     </author>
 
   
     
-    <category term="Blogging" />
+    <category term="Study" />
     
-    <category term="Demo" />
+    <category term="Spring" />
     
   
 
-  <summary>Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.</summary>
+  <summary>작성 이유
+
+스프링으로 처음하는 백엔드 프로젝트에서 프론트 하는 친구에게 CORS 에러가 발생했다는 연락을 받았다.
+
+내가 로컬 서버, test 서버에서는 문제가 없었으나, 프론트에서는 문제가 생겼다.
+
+문제 해결을 위해 여러 곳에서 서칭하다가 원인과 해결방법을 찾았고, 이곳에 기록해놓기로 하였다.
+
+
+
+CORS란
+
+
+  Access to XMLHttpRequest at ‘주소A’ from origin ‘주소B’ has been blocked by CORS policy: No ‘Access-Control-Allow-Origin’ header is present on the requested resource.
+
+
+Cross-Origin Resource Sharing 의 줄임말
+교차 출처 리소스 공유를 의...</summary>
 
   </entry>
 
