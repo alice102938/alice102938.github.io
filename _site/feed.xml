@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Alice</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-04-28T01:33:50+09:00</updated>
+  <updated>2024-05-03T22:52:32+09:00</updated>
   <author>
     <name>Alice.jH</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,11 @@
 
   
   <entry>
-    <title>[스노로즈] #2 회원 조회 API</title>
-    <link href="http://localhost:4000/posts/snorose-%ED%9A%8C%EC%9B%90-%EC%A0%95%EB%B3%B4-%EC%88%98%EC%A0%95/" rel="alternate" type="text/html" title="[스노로즈] #2 회원 조회 API" />
-    <published>2024-04-22T00:00:00+09:00</published>
+    <title>[스노로즈] #3 회원 정보 수정 API</title>
+    <link href="http://localhost:4000/posts/snorose-%ED%9A%8C%EC%9B%90-%EC%A0%95%EB%B3%B4-%EC%88%98%EC%A0%95/" rel="alternate" type="text/html" title="[스노로즈] #3 회원 정보 수정 API" />
+    <published>2024-05-03T00:00:00+09:00</published>
   
-    <updated>2024-04-22T00:00:00+09:00</updated>
+    <updated>2024-05-03T00:00:00+09:00</updated>
   
     <id>http://localhost:4000/posts/snorose-%ED%9A%8C%EC%9B%90-%EC%A0%95%EB%B3%B4-%EC%88%98%EC%A0%95/</id>
     <content src="http://localhost:4000/posts/snorose-%ED%9A%8C%EC%9B%90-%EC%A0%95%EB%B3%B4-%EC%88%98%EC%A0%95/" />
@@ -42,33 +42,33 @@
 
   <summary>개발 계획
 
-  회원에게 보여져야 하는 것 정하기
-  UserInfoDto 만들기
-  로그인 후 token이 어떻게 되는지 로직 고민
+  회원에게 수정해야하는 것 정하기
+  비밀번호 수정하기 API
+  비밀번호 제외한 개인 정보 수정하기 API
     
-      로그인 후 token이 id 꺼내지 않고 그대로 전달되어 회원 정보 조회하는 것인지 or
-      token에서 회원 정보 꺼내서 검증 후 회원 정보 조회하는 것인지
-      
-        
-          참고로 얘는 전체 다른 기능에서도 쓰일 듯함.
-        
-      
+      a
+      b
     
   
-  UserService 수정
-  UserController 수정
+  updatedAt을 삭제
+    
+      수정 후 updatedAt에 반영되도록 users entity 내에서 해결할 것
+    
+  
 
 
-추후 개발
+회원이 수정 가능한 것
+login_id : 수정 불가 
+user_name : 수정 불가 
+email : 수정 불가 
+nickname : 수정 가능(단, 1달에 한 번 정도 제약) 
+user_role_id : : 수정 불가 
+student_number : 수정 불가 
+major : 수정 불가 
+birthday : 상시 수정 가능 
+user_profile : 상시 수정 가능  
 
-  MemberUpdateDto 만들기
-
-
-개발 계획 예시
-
-  존재하는 유저 id, 존재하지 않는 유저id에 대한 통합 테스트 추가
-  유저 조회 service 추가
- ...</summary>
+passw...</summary>
 
   </entry>
 
@@ -139,23 +139,18 @@
   UserController 수정
 
 
-추후 개발
-
-  MemberUpdateDto 만들기
-
-
 개발 계획 예시
 
   존재하는 유저 id, 존재하지 않는 유저id에 대한 통합 테스트 추가
   유저 조회 service 추가
- ...</summary>
+  유저 조회 컨트롤러와 exception handler ...</summary>
 
   </entry>
 
   
   <entry>
-    <title>Snorose_Signin</title>
-    <link href="http://localhost:4000/posts/github-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%EC%BB%A8%EB%B2%A4%EC%85%98/" rel="alternate" type="text/html" title="Snorose_Signin" />
+    <title>Github 커밋 메시지 컨벤션(feat.유다시티)</title>
+    <link href="http://localhost:4000/posts/github-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%EC%BB%A8%EB%B2%A4%EC%85%98/" rel="alternate" type="text/html" title="Github 커밋 메시지 컨벤션(feat.유다시티)" />
     <published>2024-04-21T00:00:00+09:00</published>
   
     <updated>2024-04-21T00:00:00+09:00</updated>
@@ -174,10 +169,8 @@
     
   
 
-  <summary>Github 커밋 메시지 컨벤션
+  <summary>규칙
 
-
-  규칙
   
     대부분의 프로그래밍 언어에는 관용적인 스타일과 같은 잘 정해진 규칙이 있다. 커밋 로그에 대한 팀의 접근 방식도 마찬가지여야 한다.
   
@@ -187,12 +180,15 @@
   
     커밋 메시지는 아래와 같은 구조로 이루어진다.
   
-  set 메소드는 사용 의도를 파악하기 힘들고, 무분별하게 쓸 수 있어서 지양하는 것 같아
-userRegisterRequestDto.toEntity()에서 다 처리하도록!
-    
-      DB 수정
-      userService 수정
-  ...</summary>
+
+
+종류
+
+  feat : 새로운 기능과 관련된 것
+  fix : 오류와 같은 것을 수정했을 때 사용
+  docs : 문서와 관련하여 수정한 부분이 있을 때 사용
+  style : 코드의 변화와 관련없는 포맷이나 세미콜론을 놓친 것과 같은 부분들
+  refactor : 코드의 리팩토...</summary>
 
   </entry>
 
